@@ -18,16 +18,19 @@ public class LoggedActivity extends AppCompatActivity {
                     Fragment selectedFragment = null;
 
                     switch(item.getItemId()) {
-                        case R.id.nav_home:
+                        case R.id.nav_log_home:
                             selectedFragment = new HomeFragment();
                             break;
-                        case R.id.nav_login:
-                            selectedFragment = new LoginFragment();
+                        case R.id.nav_log_chat:
+                            selectedFragment = new ChatFragment();
+                            break;
+                        case R.id.nav_log_perfil:
+                            selectedFragment = new ProfileFragment();
                             break;
                     }
 
-                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                            selectedFragment).commit();
+                    getSupportFragmentManager().beginTransaction().replace(
+                            R.id.fragment_container_logged, selectedFragment).commit();
                     return true;
                 }
             };
@@ -35,13 +38,13 @@ public class LoggedActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_logged);
 
-        BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation);
+        BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation_logged);
         bottomNav.setOnItemSelectedListener(navListener);
 
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container_logged,
                 new HomeFragment()).commit();
 
 
