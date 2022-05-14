@@ -13,5 +13,9 @@
         android:id="@+id/nav_log_perfil"
         android:title="Perfil" />
 
+    <item
+        android:id="@+id/nav_log_logout"
+        android:title="Sair" />
+
 
 </menu>
