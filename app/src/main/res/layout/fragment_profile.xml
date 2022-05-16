@@ -2,7 +2,30 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_blue_dark">
+    android:background="@drawable/bg_color">
+
+    <RelativeLayout
+        android:id="@+id/top_app_bar"
+        android:layout_width="333dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="15dp"
+        android:background="#080595">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/login_float_window"
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="166dp"
+        android:background="@color/white">
+
+
+
+
+
+    </RelativeLayout>
 
 
 

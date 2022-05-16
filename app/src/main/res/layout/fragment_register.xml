@@ -2,13 +2,23 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_blue_light">
+    android:background="@drawable/bg_color">
 
     <RelativeLayout
-        android:layout_width="wrap_content"
+        android:id="@+id/top_app_bar"
+        android:layout_width="333dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="15dp"
+        android:background="#080595"></RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="390dp"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
         android:background="@color/white"
-        android:layout_margin="10dp">
+        android:layout_marginTop="150dp"
+        >
 
         <TextView
             android:id="@+id/reg_email_label"
@@ -22,15 +32,16 @@
         <EditText
             android:id="@+id/reg_email_input"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="35dp"
             android:layout_below="@id/reg_email_label"
-            android:layout_marginRight="30dp"
             android:layout_marginLeft="30dp"
-            android:inputType="textEmailAddress"/>
+            android:layout_marginRight="30dp"
+            android:background="@drawable/bg_color"
+            android:inputType="textEmailAddress" />
         <RelativeLayout
             android:id="@+id/reg_password_grapper"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="50dp"
             android:layout_below="@id/reg_email_input"
             android:layout_marginRight="30dp"
             android:layout_marginLeft="30dp">
@@ -40,12 +51,14 @@
                 android:layout_height="wrap_content"
                 android:textSize="20dp"
                 android:text="Senha"/>
+
             <EditText
                 android:id="@+id/reg_senha_input"
                 android:layout_width="150dp"
-                android:layout_height="50dp"
+                android:layout_height="40dp"
                 android:layout_below="@id/reg_senha_label"
-                android:inputType="textPassword"/>
+                android:background="@drawable/bg_color"
+                android:inputType="textPassword" />
             <TextView
                 android:id="@+id/reg_resenha_label"
                 android:layout_width="match_parent"
@@ -59,6 +72,7 @@
                 android:layout_height="50dp"
                 android:layout_marginLeft="180dp"
                 android:inputType="textPassword"
+                android:background="@drawable/bg_color"
                 android:layout_below="@id/reg_resenha_label"/>
         </RelativeLayout>
 
@@ -70,13 +84,15 @@
             android:text="Data Nascimento"
             android:layout_below="@id/reg_password_grapper"
             android:layout_marginLeft="30dp"/>
+
         <EditText
             android:id="@+id/reg_data_input"
             android:layout_width="200dp"
-            android:layout_height="50dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/reg_data_label"
             android:layout_marginLeft="30dp"
-            android:inputType="date"
-            android:layout_below="@id/reg_data_label"/>
+            android:background="@drawable/bg_color"
+            android:inputType="date" />
 
         <TextView
             android:id="@+id/reg_gacha_desc_label"
@@ -87,19 +103,22 @@
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
             android:layout_below="@id/reg_data_input"/>
+
         <EditText
             android:id="@+id/reg_gacha_desc_input"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="150dp"
             android:layout_below="@id/reg_gacha_desc_label"
-            android:inputType="text"
             android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"/>
+            android:layout_marginRight="30dp"
+            android:background="@drawable/bg_color"
+            android:inputType="text" />
         <Button
             android:id="@+id/btn_reg_submit"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:text="Enviar"
+            android:backgroundTint="#cc1ccf"
             android:layout_below="@id/reg_gacha_desc_input"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="30dp"/>
@@ -108,6 +127,7 @@
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:text="Voltar"
+            android:backgroundTint="#080595"
             android:layout_below="@id/btn_reg_submit"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"

@@ -4,9 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/gray"
+    android:background="#c4c4c4"
     tools:context=".MainActivity"
     tools:menu="@menu/bottom_navigation">
+
+    <RelativeLayout
+        android:id="@+id/top_app_bar"
+        android:layout_width="333dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="15dp"
+        android:background="#080595"></RelativeLayout>
+
 
     <FrameLayout
         android:id="@+id/fragment_container"

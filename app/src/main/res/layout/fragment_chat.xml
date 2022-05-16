@@ -2,8 +2,34 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_blue_dark">
+    android:background="@drawable/bg_color">
 
+    <RelativeLayout
+        android:id="@+id/top_app_bar"
+        android:layout_width="450dp"
+        android:layout_height="85dp"
+        android:background="#080595"></RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/login_email_input"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="600dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/white"
+        android:inputType="text"
+        android:padding="15dp" />
+
+    <Button
+        android:id="@+id/btn_send_msg"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="600dp"
+        android:backgroundTint="#080595"
+        android:text="Enviar" />
 
 
 </RelativeLayout>
