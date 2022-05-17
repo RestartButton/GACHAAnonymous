@@ -5,20 +5,11 @@
     android:background="@drawable/bg_color">
 
     <RelativeLayout
-        android:id="@+id/top_app_bar"
-        android:layout_width="333dp"
-        android:layout_height="150dp"
-        android:layout_marginLeft="39dp"
-        android:layout_marginTop="15dp"
-        android:background="#080595"></RelativeLayout>
-
-    <RelativeLayout
         android:layout_width="390dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:background="@color/white"
-        android:layout_marginTop="150dp"
-        >
+        android:layout_centerInParent="true">
 
         <TextView
             android:id="@+id/reg_email_label"
@@ -107,7 +98,7 @@
         <EditText
             android:id="@+id/reg_gacha_desc_input"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="100dp"
             android:layout_below="@id/reg_gacha_desc_label"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
